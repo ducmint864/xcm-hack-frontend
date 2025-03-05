@@ -1,12 +1,10 @@
 import { SS58String, Enum } from "polkadot-api";
 import {
   XcmV3Junctions,
-  XcmV3MultiassetAssetId,
-  XcmV3MultiassetFungibility,
   XcmV3WeightLimit,
   XcmV3Junction,
 } from "@polkadot-api/descriptors";
-import { getBeneficiary, getNativeAsset } from "../utils/";
+import { getBeneficiary, getNativeAsset } from "../utils";
 import { paseoRelayChainApi } from "./relay-chain";
 import { PASEO_PEOPLE_CHAIN_ID, paseoPeopleChainApi } from "./people-chain";
 
