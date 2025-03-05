@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@polkadot-api/descriptors": "file:.papi/descriptors",
+    "@polkadot/extension-dapp": "^0.58.4",
+    "@polkadot/extension-inject": "^0.58.4",
     "polkadot-api": "^1.9.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
