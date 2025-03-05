@@ -6,7 +6,7 @@ import {
   XcmV3WeightLimit,
   XcmV3Junction,
 } from "@polkadot-api/descriptors";
-import { getBeneficiary, getNativeAsset } from "../utils/";
+import { getBeneficiary, getNativeAsset } from "../utils"
 
 /**
  *
@@ -19,7 +19,7 @@ export const reserveTransferToParachain = (
   amount: bigint
 ) => {
   // Do sth cool soon
-  paseoAssetHubChainApi.tx.PolkadotXcm.limited_reserve_transfer_assets({
+  return paseoAssetHubChainApi.tx.PolkadotXcm.limited_reserve_transfer_assets({
     dest: Enum("V3", {
       parents: 0,
       interior: XcmV3Junctions.X1(
