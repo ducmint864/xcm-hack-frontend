@@ -12,7 +12,7 @@ export const Card: React.FC<CardProps> = ({ title, icon, className = '', childre
     <div className={`chain-card ${className}`}>
       {(title || icon) && (
         <div className="chain-header">
-          {title && <h3>{title}</h3>}
+          {title && <h3 className="card-title">{title}</h3>}
           {icon && <div className="chain-icon">{icon}</div>}
         </div>
       )}

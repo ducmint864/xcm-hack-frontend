@@ -30,18 +30,15 @@ export const TransferrableBalance: React.FC = () => {
   const transferrableBalance = useTranferrableBalance(address)
 
   return (
-    <div className="chain-info">
-      <div className="text-label">Transferrable Balance</div>
-      <div className="balance">
-        {transferrableBalance === null ? (
-          <span className="loading-pulse">Loading...</span>
-        ) : (
-          <>
-            {formatCurrency(transferrableBalance, decimals, { nDecimals: 4 })}
-            <span className="token-symbol"> {symbol}</span>
-          </>
-        )}
-      </div>
+    <div>
+      <strong>Transferrable Balance:</strong>{" "}
+      {transferrableBalance === null
+        ? "Loading..."
+        : formatCurrency(transferrableBalance, decimals, {
+            nDecimals: 2,
+          }) +
+          " " +
+          symbol}
     </div>
   )
 }
